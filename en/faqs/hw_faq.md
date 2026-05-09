@@ -4,15 +4,15 @@
 
 ## 开发调试
 
-1. **Muse Pi 的开发板使用指南在哪里获取？**
+1. **K1 MUSE Pi 的开发板使用指南在哪里获取？**
 
    - 开发文件统一在进迭开发者社区发布。以通过以下链接访问：
      [进迭开发者社区 - 开发文档](https://developer.spacemit.com/#/documentation?token=IraAwPDzPiLwFBkm3WBcwzmhnph&type=pdf)
 
-2. **Muse Pi 如何连接串口和 JTAG 调试？**
+2. **K1 MUSE Pi 如何连接串口和 JTAG 调试？**
 
    - **串口位置**
-     Muse Pi 的串口是一个单排 3 pin 插针，位于 Wi-Fi 模组和 26 pin 插针之间。
+     K1 MUSE Pi 的串口是一个单排 3 pin 插针，位于 Wi-Fi 模组和 26 pin 插针之间。
    - **连接方式**
      板上丝印 TX pin 需要连接串口线的 RX 信号。
      板上丝印 RX pin 需要连接串口线的 TX 信号。
@@ -30,7 +30,7 @@
      - SEC JTAG 连接方式：
        由于 SD 卡槽封装的原因没有将 pin 暴露出来，因此建议自行制作转接小板或将 SD 卡槽拆除后根据位号图飞线连接
      - SEC JTAG 使用要求：
-       使用 SEC JTAG 前，请先按照 MUSE Pi 用户使用指南 \> 硬件介绍 \> **Boot Download Sel&JTAG Sel** 的说明调整硬件。**参考链接**：[MUSE Pi 用户使用指南 - 硬件介绍](https://developer.spacemit.com/documentation?token=ZugWwIVmkiGNAik55hzc4C3Ln6d#part237)
+       使用 SEC JTAG 前，请先按照 K1 MUSE Pi 用户使用指南 \> 硬件介绍 \> **Boot Download Sel&JTAG Sel** 的说明调整硬件。**参考链接**：[K1 MUSE Pi 用户使用指南 - 硬件介绍](https://developer.spacemit.com/documentation?token=ZugWwIVmkiGNAik55hzc4C3Ln6d#part237)
 
 3. **原理图中，有注释 "for test" 的器件，可以去掉的？**
 
@@ -253,7 +253,7 @@
    - DDR 接口的差分线阻抗必须控制在 90Ω。
    - 对于其他差分线，阻抗可以控制在 90Ω 或 100Ω 之间。
 
-4. MuseN1 cpu 下面放了很多电容，MusePi 很少
+4. K1 MUSE N1 cpu 下面放了很多电容，K1 MUSE Pi 很少
 
-   - MuseN1 是根据 SOC 扇出区域的实际情况优化的，扇出的信号少了，背面有空放置更多电容, 因此可以放置更多电容。
-   - 相比之下，MusePi 全部信号都引出来了，因此背面空间有限，不能放置。但经过仿真和测试验证，这种设计是合理且可靠的。
+   - K1 MUSE N1 是根据 SOC 扇出区域的实际情况优化的，扇出的信号少了，背面有空放置更多电容, 因此可以放置更多电容。
+   - 相比之下，K1 MUSE Pi 全部信号都引出来了，因此背面空间有限，不能放置。但经过仿真和测试验证，这种设计是合理且可靠的。
