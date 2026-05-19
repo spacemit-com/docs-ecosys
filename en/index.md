@@ -1,3 +1,3 @@
-# FAQs
+# Eco-System
 
-- [ALL FAQs](./faqs/index.md)
+
