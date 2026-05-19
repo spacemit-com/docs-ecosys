@@ -1,3 +1,3 @@
-# FAQs
+# 生态系统
 
-- [ALL FAQs](./faqs/index.md)
+
